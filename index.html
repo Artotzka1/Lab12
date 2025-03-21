@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BMFix - Лучшая веломастерская</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #1A1A1A; /* Темный фон */
+            color: #FFFFFF; /* Белый текст */
+        }
+
+        .navbar {
+            background-color: #000000 !important; /* Черный */
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #FFFFFF !important; /* Белый */
+        }
+
+        .nav-link:hover {
+            color: #FF0000 !important; /* Красный при наведении */
+        }
+
+        header {
+            background-color: #333333; /* Темно-серый */
+            color: #FFFFFF; /* Белый */
+        }
+
+        .card {
+            background-color: #444444; /* Серый */
+            border: none;
+            color: #FFFFFF; /* Белый текст */
+        }
+
+        .btn-primary {
+            background-color: #FF0000; /* Красный */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #CC0000; /* Темно-красный при наведении */
+        }
+
+        footer {
+            background-color: #000000; /* Черный */
+            color: #FFFFFF; /* Белый */
+        }
+
+        h1, h2, h4 {
+            color: #FF0000; /* Красный для заголовков */
+        }
+
+        .fa-cog, .fa-tools, .fa-bicycle {
+            color: #FF0000; /* Красный для иконок */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">BMFix</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный блок -->
+    <header class="text-center py-5">
+        <div class="container">
+            <h1>Добро пожаловать в BMFix!</h1>
+            <p class="lead">Идеальное место для ремонта и обслуживания велосипедов</p>
+            <img src="https://ognialatau.kz/uploads/news/17537/news17537.jpg" class="img-fluid rounded"
+                alt="Веломастерская">
+        </div>
+    </header>
+
+    <!-- Услуги -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Наши услуги</h2>
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <i class="fa fa-cog fa-3x"></i>
+                    <h4>Ремонт</h4>
+                    <p>Ремонт переключателя скоростей</p>
+                    <p>300 руб.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-tools fa-3x"></i>
+                    <h4>Обслуживание</h4>
+                    <p>Проведение технического обслуживания</p>
+                    <p>500 руб.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-bicycle fa-3x"></i>
+                    <h4>Настройка</h4>
+                    <p>Наладка тормозной системы</p>
+                    <p>400 руб.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Отзывы наших клиентов</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <p>"Лучшая веломастерская в городе!"</p>
+                        <h5>- А.А.Бирюков</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <p>"Чудесное место для проведения ТО!"</p>
+                        <h5>- Петр Владыкин</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <p>"Быстрый сервис, низкие цены!"</p>
+                        <h5>- Олег Табаков</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контактная форма -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Свяжитесь с нами</h2>
+            <form class="mt-4">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Имя</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Сообщение</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="text-center py-3">
+        <p>&copy; 2025 BMFix. Все права защищены.</p>
+        <p><i class="fa fa-map-marker-alt"></i> ул. Шарикоподшипниковская, 10, Москва</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
